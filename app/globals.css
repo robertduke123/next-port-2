@@ -18,13 +18,11 @@ body {
 	transform: translate(0, -150px);
 }
 
-#project:hover > div > #project-text {
-	color: oklch(0.707 0.165 254.624);
-}
-#project:hover > #project-img {
-	transform: translateX(250px);
+#project {
+	transition: 0.5s ease-in-out;
 }
 
-#projects-container:hover + #project-cursor {
-	opacity: 10;
+button:hover > #arrow {
+	margin-right: -10px;
+	margin-left: 10px;
 }
