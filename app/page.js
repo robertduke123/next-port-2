@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import NavBar from "@/components/Nav";
 import Projects from "@/components/Projects";
-import ProjectsDos from "@/components/ProjectsDos";
 
 export default function Home() {
 	return (
@@ -9,8 +8,7 @@ export default function Home() {
 			<div className="w-full">
 				<NavBar />
 				<Hero />
-				{/* <Projects /> */}
-				<ProjectsDos />
+				<Projects />
 			</div>
 		</div>
 	);
