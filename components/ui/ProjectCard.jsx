@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
@@ -54,7 +56,7 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 							id="arrow"
 							className="px-2"
 							style={{ transition: "margin 0.3s ease-in-out" }}>
-							{"-->"}
+							<FontAwesomeIcon icon={faArrowRight} />
 						</span>
 					</button>
 				</div>

@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faCode } from "@fortawesome/free-solid-svg-icons";
+import {
+	faLocationDot,
+	faCode,
+	faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { faSquarePlus } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 
@@ -79,8 +83,20 @@ const About = () => {
 
 					<h2 className="text-2xl my-8">Services</h2>
 					<ul>
-						<li>Full Stack Development</li>
-						<li>Web Design Development</li>
+						<li>
+							<FontAwesomeIcon
+								icon={faArrowRight}
+								className="w-4 mr-5 text-blue-400"
+							/>
+							Full Stack Development
+						</li>
+						<li>
+							<FontAwesomeIcon
+								icon={faArrowRight}
+								className="w-4 mr-5 text-blue-400"
+							/>
+							Web Design Development
+						</li>
 					</ul>
 				</div>
 			</div>
