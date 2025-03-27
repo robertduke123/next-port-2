@@ -1,30 +1,29 @@
 import React from "react";
-import { Element } from "react-scroll";
 
 const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 	return (
 		<div
 			ref={ref}
 			id="project"
-			className={` relative w-2/3 h-[350px] my-10 px-10 flex bg-gray-950 border border-blue-300/25 shadow-lg shadow-blue-400/10 rounded-xs  ${
+			className={` relative w-4/5 h-[350px] my-10 flex bg-gray-950 border border-blue-300/25 shadow-lg shadow-blue-400/20 rounded-xs  ${
 				dir === "left"
 					? "self-start justify-start ml-20"
 					: "self-end justify-end mr-20"
 			} ${
 				!isIntersecting && dir === "left"
-					? "-translate-x-80"
+					? "-translate-x-80 opacity-0"
 					: !isIntersecting && dir === "right"
-					? "translate-x-80"
-					: ""
+					? "translate-x-80 opacity-0"
+					: "opacity-100"
 			}`}>
 			<h1
-				className={`absolute z-2 top-15 text-[160px] font-bold text-gray-300/10 ${
+				className={`absolute z-10 top-15 text-[160px] font-bold text-gray-300/10 ${
 					dir === "left" ? "right-8" : "left-8"
 				}`}>
 				{"0" + project.id}
 			</h1>
 			<div
-				className={`absolute z-5 w-5/6 h-full flex justify-between items-center ${
+				className={`absolute z-15 w-full px-20 h-full flex justify-between items-center ${
 					dir === "right" && "flex-row-reverse"
 				}`}>
 				<div
@@ -48,7 +47,7 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 
 					<button
 						onClick={() => console.log("test")}
-						className="cursor-pointer w-45 h-15 bg-white text-black rounded-xl shadow-md shadow-black hover:bg-blue-400 hover:text-white"
+						className="cursor-pointer w-45 h-15 bg-white text-black rounded-xl shadow-md shadow-black hover:bg-blue-900 hover:text-white hover:shadow-sm hover:shadow-blue-300/30"
 						style={{ transition: "0.3s ease-in-out" }}>
 						<span>View Project</span>
 						<span
