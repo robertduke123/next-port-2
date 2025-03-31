@@ -188,7 +188,7 @@ const About = () => {
 							style={{ transition: "0.4s" }}>
 							<FontAwesomeIcon
 								icon={faArrowRight}
-								className="w-4 mr-5 text-blue-400"
+								className="w-4 mr-5 text-blue-500"
 							/>
 							Web Design Development
 						</li>
