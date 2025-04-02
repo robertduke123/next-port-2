@@ -8,6 +8,7 @@ import {
 import { faSquarePlus } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-scroll";
 
 const About = () => {
 	const { ref: ref1, inView: isIntersecting1 } = useInView();
@@ -27,7 +28,7 @@ const About = () => {
 	const { ref: ref15, inView: isIntersecting15 } = useInView();
 
 	return (
-		<div className="w-full flex justify-center">
+		<div id="about" className="w-full flex justify-center">
 			<div className="w-2/3 flex justify-center">
 				<div className="w-1/2 pl-25 pr-5 py-10 flex flex-col justify-around items-start">
 					<h2 className="text-xl text-gray-500">About Me</h2>
@@ -103,7 +104,9 @@ const About = () => {
 						<button
 							className="cursor-pointer w-38 h-13 rounded-lg py-2 text-center border border-blue-400/50 hover:-translate-y-0.5 hover:border-blue-400"
 							style={{ transition: "0.2s" }}>
-							View Projects
+							<Link to="projects" smooth duration={500}>
+								View Projects
+							</Link>
 						</button>
 					</div>
 				</div>
@@ -162,7 +165,7 @@ const About = () => {
 					<h2
 						ref={ref13}
 						className={`text-2xl my-8 ${
-							!isIntersecting12 ? "translate-x-20 opacity-0" : "opacity-100"
+							!isIntersecting13 ? "translate-x-20 opacity-0" : "opacity-100"
 						}`}
 						style={{ transition: "0.4s" }}>
 						Services
@@ -171,7 +174,7 @@ const About = () => {
 						<li
 							ref={ref14}
 							className={
-								!isIntersecting12 ? "translate-x-20 opacity-0" : "opacity-100"
+								!isIntersecting14 ? "translate-x-20 opacity-0" : "opacity-100"
 							}
 							style={{ transition: "0.4s" }}>
 							<FontAwesomeIcon
@@ -183,7 +186,7 @@ const About = () => {
 						<li
 							ref={ref15}
 							className={
-								!isIntersecting12 ? "translate-x-20 opacity-0" : "opacity-100"
+								!isIntersecting15 ? "translate-x-20 opacity-0" : "opacity-100"
 							}
 							style={{ transition: "0.4s" }}>
 							<FontAwesomeIcon

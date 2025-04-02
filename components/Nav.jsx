@@ -1,5 +1,4 @@
 "use client";
-// import Link from "next/link";
 import React, { Fragment, useEffect, useState } from "react";
 import { navItems } from "@/data";
 import { Link } from "react-scroll";

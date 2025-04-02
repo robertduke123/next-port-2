@@ -1,16 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import Link from "next/link";
 
 const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 	return (
 		<div
 			ref={ref}
 			id="project"
-			className={` relative w-4/5 h-[350px] my-10 flex bg-gray-950 border border-blue-300/25 shadow-lg shadow-blue-400/20 rounded-xs  ${
+			className={` relative w-4/5 h-[350px] my-10 flex bg-black-100 border border-blue-300/25 shadow-lg shadow-blue-400/20 rounded-xs  ${
 				dir === "left"
 					? "self-start justify-start ml-20"
-					: "self-end justify-end mr-20"
+					: "self-end justify-end mr-30"
 			} ${
 				!isIntersecting && dir === "left"
 					? "-translate-x-80 opacity-0"
@@ -51,13 +52,15 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 						onClick={() => console.log("test")}
 						className="cursor-pointer w-45 h-15 bg-white text-black rounded-xl shadow-md shadow-black hover:bg-blue-900 hover:text-white hover:shadow-sm hover:shadow-blue-300/30"
 						style={{ transition: "0.3s ease-in-out" }}>
-						<span>View Project</span>
-						<span
-							id="arrow"
-							className="px-2"
-							style={{ transition: "margin 0.3s ease-in-out" }}>
-							<FontAwesomeIcon icon={faArrowRight} />
-						</span>
+						<Link target="_blank" href={project.link}>
+							<span>View Project</span>
+							<span
+								id="arrow"
+								className="px-2"
+								style={{ transition: "margin 0.3s ease-in-out" }}>
+								<FontAwesomeIcon icon={faArrowRight} />
+							</span>
+						</Link>
 					</button>
 				</div>
 			</div>
