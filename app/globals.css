@@ -13,6 +13,9 @@
 body {
 	color: white;
 }
+::-webkit-scrollbar {
+	display: none;
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
