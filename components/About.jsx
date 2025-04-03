@@ -28,7 +28,10 @@ const About = () => {
 	const { ref: ref15, inView: isIntersecting15 } = useInView();
 
 	return (
-		<div id="about" className="w-full flex justify-center">
+		<div
+			id="about"
+			className="w-full flex flex-col justify-center items-center">
+			<div className="h-[1px] w-5/6 mb-10 bg-gray-400"></div>
 			<div className="w-2/3 flex justify-center">
 				<div className="w-1/2 pl-25 pr-5 py-10 flex flex-col justify-around items-start">
 					<h2 className="text-xl text-gray-500">About Me</h2>
