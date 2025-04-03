@@ -37,7 +37,25 @@ const Contact = () => {
 	return (
 		<div id="contact" className="w-full p-10 flex flex-col items-center">
 			<h2 className="text-xl text-gray-500">Get In Touch</h2>
-			<div className="w-4/5 flex justify-between">
+			<div className="w-4/5 flex justify-center">
+				<div className="w-2/5 h-60 my-10 pl-10 flex flex-col justify-between">
+					<div className="w-full p-8 pt-4 border border-blue-400/50 rounded-lg">
+						<h2 className="text-2xl">Looking Forward To Hearing From You</h2>
+						<p className="pr-5 text-gray-700">
+							Feel free to get in touch for to contact me and I will get back to
+							you as soon as possible
+						</p>
+					</div>
+					<div
+						className="cursor-pointer w-12 h-12 ml-5 flex justify-center items-center border border-blue-400/50 rounded-lg hover:border-blue-400 hover:scale-105"
+						style={{ transition: ".3s ease-in-out" }}>
+						<Link
+							target="_blank"
+							href="https://github.com/robertduke123?tab=repositories">
+							<FontAwesomeIcon icon={faGithub} />
+						</Link>
+					</div>
+				</div>
 				<form
 					ref={form}
 					className="w-1/2 h-100 my-10 flex flex-col justify-between items-center"
@@ -66,17 +84,6 @@ const Contact = () => {
 						Send Message
 					</button>
 				</form>
-				<div className="w-1/2 h-100 my-10 flex flex-col justify-between items-center">
-					<div
-						className="cursor-pointer w-12 h-12 flex justify-center items-center border border-blue-400/50 rounded-lg hover:border-blue-400 hover:scale-105"
-						style={{ transition: ".3s ease-in-out" }}>
-						<Link
-							target="_blank"
-							href="https://github.com/robertduke123?tab=repositories">
-							<FontAwesomeIcon icon={faGithub} />
-						</Link>
-					</div>
-				</div>
 			</div>
 		</div>
 	);
