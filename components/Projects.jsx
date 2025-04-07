@@ -15,7 +15,7 @@ const Projects = () => {
 			id="projects"
 			className="relative w-full flex flex-col items-center 
 			">
-			<div className="h-[1px] w-5/6 bg-gray-400"></div>
+			<div className="h-[1px] w-5/6 bg-gray-400/30"></div>
 			<h1 className="relative z-5 w-full h-20 px-45 pt-7 text-center text-lg">
 				My Projects
 			</h1>

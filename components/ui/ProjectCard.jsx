@@ -29,9 +29,11 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 				className={`absolute z-15 w-full px-20 h-full flex justify-between items-center ${
 					dir === "right" && "flex-row-reverse"
 				}`}>
-				<div
-					className="w-[450px] h-60 bg-cover bg-center rounded-sm"
-					style={{ backgroundImage: `url(${project.img})` }}></div>
+				<div className="w-[450px] h-60 rounded-sm overflow-hidden">
+					<div
+						className="w-[450px] h-60 bg-cover bg-center rounded-sm"
+						style={{ backgroundImage: `url(${project.img})` }}></div>
+				</div>
 
 				<div className=" w-2/5 h-full px-10 py-10 flex flex-col justify-around items-start">
 					<h1 className="text-4xl">{project.title}</h1>
