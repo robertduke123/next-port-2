@@ -6,7 +6,6 @@ import Link from "next/link";
 
 const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 	const [scale, setScale] = useState(false);
-	console.log(scale);
 
 	return (
 		<div

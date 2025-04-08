@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 const Scroll = () => {
 	const [scroll, setScroll] = useState(0);
-	console.log(scroll);
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => setScroll(window.scrollY));
