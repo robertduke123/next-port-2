@@ -1,17 +1,21 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
+	const [scale, setScale] = useState(false);
+	console.log(scale);
+
 	return (
 		<div
 			ref={ref}
 			id="project"
-			className={` relative w-4/5 h-[350px] my-10 flex bg-black-100 border border-blue-300/25 shadow-lg shadow-blue-400/20 rounded-xs  ${
+			className={` relative w-3/5 h-[350px] my-10 flex bg-black-100 border border-blue-300/25 shadow-lg shadow-blue-400/20 rounded-xs  ${
 				dir === "left"
-					? "self-start justify-start ml-20"
-					: "self-end justify-end mr-30"
+					? "self-start justify-start ml-45"
+					: "self-end justify-end mr-55"
 			} ${
 				!isIntersecting && dir === "left"
 					? "-translate-x-80 opacity-0"
@@ -31,8 +35,13 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 				}`}>
 				<div className="w-[450px] h-60 rounded-sm overflow-hidden">
 					<div
+						id="project-img"
 						className="w-[450px] h-60 bg-cover bg-center rounded-sm"
-						style={{ backgroundImage: `url(${project.img})` }}></div>
+						style={{
+							backgroundImage: `url(${project.img})`,
+							scale: scale ? "1.25" : "1",
+							transition: "0.4s",
+						}}></div>
 				</div>
 
 				<div className=" w-2/5 h-full px-10 py-10 flex flex-col justify-around items-start">
@@ -53,7 +62,9 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 					<button
 						onClick={() => console.log("test")}
 						className="cursor-pointer w-45 h-15 bg-white text-black rounded-xl shadow-md shadow-black hover:bg-blue-900 hover:text-white hover:shadow-sm hover:shadow-blue-300/30"
-						style={{ transition: "0.3s ease-in-out" }}>
+						style={{ transition: "0.3s ease-in-out" }}
+						onMouseEnter={() => setScale(true)}
+						onMouseLeave={() => setScale(false)}>
 						<Link target="_blank" href={project.link}>
 							<span>View Project</span>
 							<span
