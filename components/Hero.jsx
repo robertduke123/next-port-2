@@ -5,6 +5,8 @@ const Hero = () => {
 		<div
 			id="home"
 			className="w-full h-screen flex flex-col justify-center items-center">
+			<div id="animation" className="absolute z-40 w-5 h-3 bg-red-400"></div>
+
 			<div className="w-38 flex justify-between items-center">
 				<div className="w-[30px] h-[30px] rounded-full bg-red-600" />
 				<span className="w-26 h-6 text-center text-sm rounded-xl border border-white ">

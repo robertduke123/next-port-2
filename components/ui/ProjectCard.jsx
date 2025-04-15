@@ -1,12 +1,9 @@
-"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 
 const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
-	const [scale, setScale] = useState(false);
-
 	return (
 		<div
 			ref={ref}
@@ -32,16 +29,12 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 				className={`absolute z-15 w-full px-20 h-full flex justify-between items-center ${
 					dir === "right" && "flex-row-reverse"
 				}`}>
-				<div className="w-[450px] h-60 rounded-sm overflow-hidden">
-					<div
-						id="project-img"
-						className="w-[450px] h-60 bg-cover bg-center rounded-sm"
-						style={{
-							backgroundImage: `url(${project.img})`,
-							scale: scale ? "1.25" : "1",
-							transition: "0.4s",
-						}}></div>
-				</div>
+				<div
+					id="project-img"
+					className="w-[450px] h-60 bg-cover bg-center rounded-sm"
+					style={{
+						backgroundImage: `url(${project.img})`,
+					}}></div>
 
 				<div className=" w-2/5 h-full px-10 py-10 flex flex-col justify-around items-start">
 					<h1 className="text-4xl">{project.title}</h1>
@@ -57,14 +50,11 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 							postgresSQL
 						</span>
 					</div>
-
-					<button
-						onClick={() => console.log("test")}
-						className="cursor-pointer w-45 h-15 bg-white text-black rounded-xl shadow-md shadow-black hover:bg-blue-900 hover:text-white hover:shadow-sm hover:shadow-blue-300/30"
-						style={{ transition: "0.3s ease-in-out" }}
-						onMouseEnter={() => setScale(true)}
-						onMouseLeave={() => setScale(false)}>
-						<Link target="_blank" href={project.link}>
+					<Link target="_blank" href={project.link}>
+						<button
+							onClick={() => console.log("test")}
+							className="cursor-pointer w-45 h-15 bg-white text-black rounded-xl shadow-md shadow-black hover:bg-blue-900 hover:text-white hover:shadow-sm hover:shadow-blue-300/30"
+							style={{ transition: "0.3s ease-in-out" }}>
 							<span>View Project</span>
 							<span
 								id="arrow"
@@ -72,8 +62,8 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 								style={{ transition: "margin 0.3s ease-in-out" }}>
 								<FontAwesomeIcon icon={faArrowRight} />
 							</span>
-						</Link>
-					</button>
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>

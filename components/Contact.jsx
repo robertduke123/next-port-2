@@ -104,6 +104,9 @@ const Contact = () => {
 					</button>
 				</form>
 			</div>
+			<div className="w-full h-20 mt-20 pt-20 flex justify-center text-gray-400/50">
+				<span>© 2025 RobertDuke. All rights reserved.</span>
+			</div>
 		</div>
 	);
 };
