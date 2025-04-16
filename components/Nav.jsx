@@ -21,11 +21,11 @@ const NavBar = () => {
 	return (
 		<Fragment>
 			<div
-				className={`fixed z-20 w-full h-12 flex justify-around items-center bg-black-100 border-b border-gray-700 text-xs ${
+				className={`fixed z-45 w-full h-16 flex justify-around items-center bg-black-100 border-b border-gray-700 text-sm ${
 					trans && "-translate-y-50"
 				}`}
 				style={{ transition: "0.3s" }}>
-				<ul className="w-75 h-8 px-8 flex justify-around items-center border border-gray-700 rounded-[20px] ">
+				<ul className="w-80 h-10 px-8 flex justify-around items-center border border-gray-700 rounded-[20px] ">
 					{navItems.map((item, idx) => (
 						<li
 							key={"nav " + idx}

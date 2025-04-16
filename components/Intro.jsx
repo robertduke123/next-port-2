@@ -7,19 +7,19 @@ const Intro = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setText("hola");
-		}, 700);
+		}, 500);
 		setTimeout(() => {
 			setText("Konnichiwa");
-		}, 1400);
+		}, 1000);
 		setTimeout(() => {
 			setText("Привет");
-		}, 2100);
+		}, 1500);
 		setTimeout(() => {
 			setText("hello");
-		}, 2800);
+		}, 2000);
 		setTimeout(() => {
 			setDis(false);
-		}, 3500);
+		}, 2500);
 	}, []);
 
 	return (

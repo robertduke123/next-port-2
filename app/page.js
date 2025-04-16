@@ -14,8 +14,8 @@ export default function Home() {
 				<Scroll />
 				<NavBar />
 				<Hero />
-				<Projects />
 				<About />
+				<Projects />
 				<Contact />
 			</div>
 		</div>

@@ -35,6 +35,7 @@ const Contact = () => {
 
 	return (
 		<div id="contact" className="w-full p-10 my-10 flex flex-col items-center">
+			<div className="h-[1px] w-5/6 mb-10 bg-gray-400/30"></div>
 			<h2 className="text-xl text-gray-500">Get In Touch</h2>
 			<div className="w-4/5 flex justify-center">
 				<div
