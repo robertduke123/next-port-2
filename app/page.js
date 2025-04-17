@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Grad from "@/components/Grad";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import NavBar from "@/components/Nav";
@@ -15,6 +16,7 @@ export default function Home() {
 				<NavBar />
 				<Hero />
 				<About />
+				<Grad />
 				<Projects />
 				<Contact />
 			</div>

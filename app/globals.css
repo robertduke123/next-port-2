@@ -45,14 +45,14 @@ button:hover #arrow {
 }
 
 #animation {
-	animation: spinning 3s infinite linear;
+	animation: spinning 4s infinite linear;
 }
 
 @keyframes spinning {
 	from {
-		-webkit-transform: rotate(0deg) translateX(20px) rotate(0deg);
+		-webkit-transform: rotate(0deg) translateX(55px) rotate(0deg);
 	}
 	to {
-		-webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg);
+		-webkit-transform: rotate(360deg) translateX(55px) rotate(-360deg);
 	}
 }

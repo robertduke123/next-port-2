@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowPointer } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 const Hero = () => {
@@ -5,7 +7,11 @@ const Hero = () => {
 		<div
 			id="home"
 			className="w-full h-screen flex flex-col justify-center items-center">
-			<div id="animation" className="absolute z-40 w-5 h-3 bg-red-400"></div>
+			<FontAwesomeIcon
+				id="animation"
+				className="absolute z-40 translate-x-42 text-3xl text-red-400 -rotate-26"
+				icon={faArrowPointer}
+			/>
 
 			<div className="w-38 flex justify-between items-center">
 				<div className="w-[30px] h-[30px] rounded-full bg-red-600" />
@@ -21,7 +27,10 @@ const Hero = () => {
 					id="button-slide"
 					className=" relative cursor-pointer w-32 h-10 px-2 flex justify-between items-center text-xs border border-gray-400 rounded-full hover:translate-1  overflow-hidden"
 					style={{ transition: "0.3s" }}>
-					<div className="absolute z-5 w-[10px] h-[10px] bg-green-500 rounded-full" />
+					<div
+						id="pulse"
+						className="absolute z-5 w-[10px] h-[10px] bg-green-500 rounded-full"
+					/>
 					<span className="absolute z-5 ml-4">Connect With Me</span>
 					<div
 						id="color-slide"
