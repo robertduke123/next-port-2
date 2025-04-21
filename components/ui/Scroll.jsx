@@ -3,7 +3,6 @@ import { useAuth } from "@/context/AuthContext";
 import React from "react";
 
 const Scroll = () => {
-	// const [scroll, setScroll] = useState(0);
 	const { scroll } = useAuth();
 
 	return (

@@ -27,10 +27,17 @@ const Hero = () => {
 					id="button-slide"
 					className=" relative cursor-pointer w-32 h-10 px-2 flex justify-between items-center text-xs border border-gray-400 rounded-full hover:translate-1  overflow-hidden"
 					style={{ transition: "0.3s" }}>
-					<div
-						id="pulse"
-						className="absolute z-5 w-[10px] h-[10px] bg-green-500 rounded-full"
-					/>
+					<div className="absolute z-5 w-[10px] h-[10px]">
+						<div
+							id="pulse-back"
+							className="absolute z-6 w-[10px] h-[10px] bg-green-500/50 rounded-full"
+						/>
+						<div
+							id="pulse"
+							className="absolute z-7 w-[10px] h-[10px] bg-green-500 rounded-full"
+						/>
+					</div>
+
 					<span className="absolute z-5 ml-4">Connect With Me</span>
 					<div
 						id="color-slide"

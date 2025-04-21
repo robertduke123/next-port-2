@@ -7,6 +7,8 @@ const Grad = () => {
 	const { ref: ref1, inView: isIntersecting1 } = useInView();
 	const { scroll } = useAuth();
 
+	console.log((scroll / 3632.3) * 100 - 22);
+
 	return (
 		<div
 			ref={ref1}
@@ -14,9 +16,11 @@ const Grad = () => {
 				!isIntersecting1 ? "-translate-x-[700px] opacity-0" : "opacity-100"
 			}`}
 			style={{ transition: "0.6s ease-in-out" }}>
-			<h1 className="w-full px-5 text-8xl overflow-x-hidden">
+			<h1 className=" w-full px-5 text-8xl overflow-x-hidden">
 				<span
-					className={` whitespace-nowrap -translate-x-[200px]`}
+					className={`relative whitespace-nowrap -ml-[${
+						(scroll / 3632.3) * 100 - 22
+					}px]`}
 					style={{ transition: "0.4s" }}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
 					officia corporis, molestiae sunt nesciunt quidem repellat libero autem
