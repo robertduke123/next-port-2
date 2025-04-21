@@ -16,7 +16,7 @@ export default function Home() {
 				<NavBar />
 				<Hero />
 				<About />
-				<Grad />
+				{/* <Grad /> */}
 				<Projects />
 				<Contact />
 			</div>

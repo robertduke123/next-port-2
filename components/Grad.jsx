@@ -7,7 +7,7 @@ const Grad = () => {
 	const { ref: ref1, inView: isIntersecting1 } = useInView();
 	const { scroll } = useAuth();
 
-	console.log((scroll / 3632.3) * 100 - 22);
+	// console.log((scroll / 3632.3) * 100 - 22);
 
 	return (
 		<div
@@ -18,9 +18,9 @@ const Grad = () => {
 			style={{ transition: "0.6s ease-in-out" }}>
 			<h1 className=" w-full px-5 text-8xl overflow-x-hidden">
 				<span
-					className={`relative whitespace-nowrap -ml-[${
-						(scroll / 3632.3) * 100 - 22
-					}px]`}
+					className={`whitespace-nowrap -ml-[${Number(
+						((scroll / 3632.3) * 100 - 22) * 10
+					)}px]`}
 					style={{ transition: "0.4s" }}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
 					officia corporis, molestiae sunt nesciunt quidem repellat libero autem
