@@ -1,6 +1,8 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowPointer } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import { Link } from "react-scroll";
 
 const Hero = () => {
 	return (
@@ -23,7 +25,10 @@ const Hero = () => {
 			<h1 className="font-medium text-8xl text-purple-400">FULL</h1>
 			<div className="w-110 flex justify-between items-center">
 				<h1 className="font-medium text-8xl text-orange-200">STACK</h1>
-				<div
+				<Link
+					to="contact"
+					smooth
+					duration={500}
 					id="button-slide"
 					className=" relative cursor-pointer w-32 h-10 px-2 flex justify-between items-center text-xs border border-gray-400 rounded-full hover:translate-1  overflow-hidden"
 					style={{ transition: "0.3s" }}>
@@ -43,10 +48,35 @@ const Hero = () => {
 						id="color-slide"
 						className=" absolute z-4 w-[140px] h-[110px] bg-blue-600 rounded-full -translate-3 translate-y-[150px]"
 						style={{ transition: "0.5s" }}></div>
-				</div>
+				</Link>
 			</div>
+			<div className=" flex justify-between items-center">
+				<Link
+					to="projects"
+					smooth
+					duration={500}
+					id="button-slide"
+					className=" relative cursor-pointer w-28 h-10 px-2 flex justify-between items-center text-xs border border-gray-400 rounded-full hover:translate-1  overflow-hidden"
+					style={{ transition: "0.3s" }}>
+					<div className="absolute z-5 w-[10px] h-[10px]">
+						<div
+							id="pulse-back"
+							className="absolute z-6 w-[10px] h-[10px] bg-blue-500/50 rounded-full"
+						/>
+						<div
+							id="pulse"
+							className="absolute z-7 w-[10px] h-[10px] bg-blue-500 rounded-full"
+						/>
+					</div>
 
-			<h1 className="font-medium text-8xl text-blue-300">DEVELOPER</h1>
+					<span className="absolute z-5 ml-4">View Projects</span>
+					<div
+						id="color-slide"
+						className=" absolute z-4 w-[140px] h-[110px] bg-purple-500 rounded-full -translate-3 translate-y-[150px]"
+						style={{ transition: "0.5s" }}></div>
+				</Link>
+				<h1 className="font-medium text-8xl text-blue-300">DEVELOPER</h1>
+			</div>
 
 			<p className="w-75 text-center">
 				Creating <span className="text-purple-400">functional</span>,{" "}

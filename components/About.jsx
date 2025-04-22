@@ -95,22 +95,24 @@ const About = () => {
 					</p>
 					<div
 						ref={ref6}
-						className={`w-full pr-5 flex justify-around ${
+						className={`w-full pr-5 flex ${
 							!isIntersecting6 ? "translate-y-20 opacity-0" : "opacity-100"
 						}`}
 						style={{ transition: "0.4s" }}>
 						<button
 							className={`cursor-pointer w-38 h-13 rounded-lg py-2 text-center bg-blue-400 hover:-translate-y-0.5`}
 							style={{ transition: "0.2s" }}>
-							Get In Touch
+							<Link to="projects" smooth duration={500}>
+								Get In Touch
+							</Link>
 						</button>
-						<button
+						{/* <button
 							className="cursor-pointer w-38 h-13 rounded-lg py-2 text-center border border-blue-400/50 hover:-translate-y-0.5 hover:border-blue-400"
 							style={{ transition: "0.2s" }}>
 							<Link to="projects" smooth duration={500}>
 								View Projects
 							</Link>
-						</button>
+						</button> */}
 					</div>
 				</div>
 
