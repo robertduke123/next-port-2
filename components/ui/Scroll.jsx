@@ -7,7 +7,7 @@ const Scroll = () => {
 
 	return (
 		<div
-			className="fixed z-20 w-20 top-35 right-5 h-80 flex justify-center items-center bg-black-100 "
+			className="hidden sm:flex fixed z-20 w-20 top-35 right-5 h-80 justify-center items-center bg-black-100 "
 			style={{ boxShadow: "-5px 5px 5px 5px #01030f" }}>
 			<span className="w-5 mr-5 text-center text-gray-400/50 text-sm">
 				{Math.floor((scroll / 3232.3) * 100)}

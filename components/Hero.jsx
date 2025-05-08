@@ -22,9 +22,11 @@ const Hero = () => {
 				</span>
 			</div>
 
-			<h1 className="font-medium text-8xl text-purple-400">FULL</h1>
-			<div className="w-110 flex justify-between items-center">
-				<h1 className="font-medium text-8xl text-orange-200">STACK</h1>
+			<h1 className="font-medium md:text-8xl text-5xl text-purple-400">FULL</h1>
+			<div className=" flex justify-between items-center">
+				<h1 className="font-medium md:text-8xl text-5xl text-orange-200">
+					STACK
+				</h1>
 				<Link
 					to="contact"
 					smooth
@@ -75,7 +77,9 @@ const Hero = () => {
 						className=" absolute z-4 w-[140px] h-[110px] bg-purple-500 rounded-full -translate-3 translate-y-[150px]"
 						style={{ transition: "0.5s" }}></div>
 				</Link>
-				<h1 className="font-medium text-8xl text-blue-300">DEVELOPER</h1>
+				<h1 className="font-medium md:text-8xl text-5xl text-blue-300">
+					DEVELOPER
+				</h1>
 			</div>
 
 			<p className="w-75 text-center">

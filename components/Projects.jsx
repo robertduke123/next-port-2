@@ -15,7 +15,7 @@ const Projects = () => {
 			id="projects"
 			className="relative w-full flex flex-col items-center 
 			">
-			<h1 className="relative z-5 w-full h-20 px-45 pt-7 text-center text-lg">
+			<h1 className="relative z-5 w-full h-20 pt-7 text-center text-lg">
 				My Projects
 			</h1>
 			<div className="absolute z-5 w-full "></div>
