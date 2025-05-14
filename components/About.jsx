@@ -32,8 +32,8 @@ const About = () => {
 			id="about"
 			className="w-full flex flex-col justify-center items-center">
 			<div className="h-[1px] w-5/6 mb-10 bg-gray-400/30"></div>
-			<div className="w-full md:w-2/3 flex flex-col md:flex-row justify-center">
-				<div className="w-4/5 md:w-1/2 pl-25 pr-5 py-10 flex flex-col justify-around items-start">
+			<div className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-center">
+				<div className="w-full lg:w-1/2 px-10 lg:pl-25 lg:pr-5 py-10 flex flex-col justify-around items-start">
 					<h2 className="text-xl text-gray-500">About Me</h2>
 					<div
 						ref={ref1}
@@ -85,7 +85,7 @@ const About = () => {
 
 					<p
 						ref={ref5}
-						className={`text-md md:text-xl my-5 ${
+						className={`text-md md:text-xl my-5 md:mr-25 lg:mr-0 ${
 							!isIntersecting5 ? "-translate-x-20 opacity-0" : "opacity-100"
 						}`}
 						style={{ transition: "0.6s" }}>
@@ -118,7 +118,7 @@ const About = () => {
 
 				<div
 					ref={ref7}
-					className={`w-4/5 md:w-1/2 pl-10 pr-5 py-10 flex flex-col items-center md:items-start  ${
+					className={`w-4/5 lg:w-1/2 pl-10 pr-5 py-10 flex flex-col items-center lg:items-start  ${
 						!isIntersecting7 ? "translate-x-20 opacity-0" : "opacity-100"
 					}`}
 					style={{ transition: "0.4s" }}>
@@ -127,7 +127,7 @@ const About = () => {
 					<ul className="w-full flex flex-wrap">
 						<li
 							ref={ref8}
-							className={`w-18 md:w-24 h-8 md:h-10 m-2 py-2 md:py-3 text-[10px] md:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
+							className={`w-18 lg:w-24 h-8 lg:h-10 m-2 py-2 lg:py-3 text-[10px] lg:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
 								!isIntersecting8 ? "translate-y-20 opacity-0" : "opacity-100"
 							}`}
 							style={{ transition: "0.6s" }}>
@@ -135,7 +135,7 @@ const About = () => {
 						</li>
 						<li
 							ref={ref9}
-							className={`w-18 md:w-24 h-8 md:h-10 m-2 py-2 md:py-3 text-[10px] md:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
+							className={`w-18 lg:w-24 h-8 lg:h-10 m-2 py-2 lg:py-3 text-[10px] lg:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
 								!isIntersecting9 ? "translate-y-20 opacity-0" : "opacity-100"
 							}`}
 							style={{ transition: "0.8s" }}>
@@ -143,7 +143,7 @@ const About = () => {
 						</li>
 						<li
 							ref={ref10}
-							className={`w-18 md:w-24 h-8 md:h-10 m-2 py-2 md:py-3 text-[10px] md:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
+							className={`w-18 lg:w-24 h-8 lg:h-10 m-2 py-2 lg:py-3 text-[10px] lg:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
 								!isIntersecting10 ? "translate-y-20 opacity-0" : "opacity-100"
 							}`}
 							style={{ transition: "1s" }}>
@@ -151,7 +151,7 @@ const About = () => {
 						</li>
 						<li
 							ref={ref11}
-							className={`w-18 md:w-24 h-8 md:h-10 m-2 py-2 md:py-3 text-[10px] md:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
+							className={`w-18 lg:w-24 h-8 lg:h-10 m-2 py-2 lg:py-3 text-[10px] lg:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
 								!isIntersecting11 ? "translate-y-20 opacity-0" : "opacity-100"
 							}`}
 							style={{ transition: "1.2s" }}>
@@ -159,7 +159,7 @@ const About = () => {
 						</li>
 						<li
 							ref={ref12}
-							className={`w-18 md:w-24 h-8 md:h-10 m-2 py-2 md:py-3 text-[10px] md:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
+							className={`w-18 lg:w-24 h-8 lg:h-10 m-2 py-2 lg:py-3 text-[10px] lg:text-xs text-center text-gray-400 rounded-3xl bg-blue-900/30 ${
 								!isIntersecting12 ? "translate-y-20 opacity-0" : "opacity-100"
 							}`}
 							style={{ transition: "1.4s" }}>
