@@ -33,7 +33,7 @@ const About = () => {
 			className="w-full flex flex-col justify-center items-center">
 			<div className="h-[1px] w-5/6 mb-10 bg-gray-400/30"></div>
 			<div className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-center">
-				<div className="w-full lg:w-1/2 px-10 lg:pl-25 lg:pr-5 py-10 flex flex-col justify-around items-start">
+				<div className="w-full lg:w-1/2 px-10 md:pl-25 md:pr-5 py-10 flex flex-col justify-around items-start">
 					<h2 className="text-xl text-gray-500">About Me</h2>
 					<div
 						ref={ref1}

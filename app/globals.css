@@ -48,12 +48,20 @@ button:hover #arrow {
 
 @keyframes spinning {
 	from {
+		-webkit-transform: rotate(0deg) translateX(48px) rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg) translateX(48px) rotate(-360deg);
+	}
+}
+/* @keyframes spinning {
+	from {
 		-webkit-transform: rotate(0deg) translateX(55px) rotate(0deg);
 	}
 	to {
 		-webkit-transform: rotate(360deg) translateX(55px) rotate(-360deg);
 	}
-}
+} */
 
 #pulse-back {
 	animation: pulseBack 2s infinite linear;

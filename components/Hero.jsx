@@ -11,7 +11,7 @@ const Hero = () => {
 			className="w-full h-screen flex flex-col justify-center items-center">
 			<FontAwesomeIcon
 				id="animation"
-				className="absolute z-40 translate-x-42 text-3xl text-red-400 -rotate-26"
+				className="absolute z-40 translate-x-20 -translate-y-5 md:translate-x-42 md:translate-y-0 text-xl md:text-3xl text-red-400 -rotate-26"
 				icon={faArrowPointer}
 			/>
 
