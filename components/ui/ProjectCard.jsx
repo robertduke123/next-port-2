@@ -31,7 +31,7 @@ const ProjectCard = ({ ref, project, isIntersecting, dir }) => {
 				}`}>
 				<div
 					id="project-img"
-					className="w-50 md:w-[350px] lg:w-[450px] h-28 md:h-45 lg:h-60 bg-cover bg-center rounded-sm k"
+					className="w-50 md:w-[350px] lg:w-[450px] h-28 md:h-45 lg:h-60 bg-cover bg-center rounded-sm"
 					style={{
 						backgroundImage: `url(${project.img})`,
 					}}></div>
