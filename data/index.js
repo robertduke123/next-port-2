@@ -9,7 +9,7 @@ export const projects = [
 	{
 		id: 1,
 		title: "Bug Tracker App",
-		desc: "An application used to track bugs, feature etc on for a companies various projects",
+		desc: "An application used to track bugs, feature etc for a companies various projects",
 		img: "/project.bugtracker.png",
 		iconLists: ["/re.svg", "/tail.svg"],
 		link: "https://rpd-bug-tracker.onrender.com",
@@ -36,7 +36,7 @@ export const projects = [
 	{
 		id: 4,
 		title: "Calender App",
-		desc: "A fully functional calendar aplpication used for your reminders all year round",
+		desc: "A fully functional calendar application used for weekly reminders or alarms for specific days",
 		img: "/project.calendar.png",
 		iconLists: ["/next.svg", "/tail.svg"],
 		link: "https://calendar-rpd.onrender.com",
