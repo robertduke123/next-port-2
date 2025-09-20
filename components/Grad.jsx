@@ -5,9 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const Grad = () => {
 	const { ref: ref1, inView: isIntersecting1 } = useInView();
-	const { scroll } = useAuth();
-
-	// console.log((scroll / 3632.3) * 100 - 22);
+	const {} = useAuth();
 
 	return (
 		<div
