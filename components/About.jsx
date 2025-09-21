@@ -100,9 +100,9 @@ const About = () => {
 						}`}
 						style={{ transition: "0.4s" }}>
 						<button
-							className={`cursor-pointer w-38 h-13 rounded-lg py-2 text-center bg-blue-400 hover:-translate-y-0.5`}
+							className={`cursor-pointer w-38 h-12 rounded-lg py-2 text-center bg-blue-400 hover:-translate-y-0.5`}
 							style={{ transition: "0.2s" }}>
-							<Link to="projects" smooth duration={500}>
+							<Link to="contact" smooth duration={500}>
 								Get In Touch
 							</Link>
 						</button>
