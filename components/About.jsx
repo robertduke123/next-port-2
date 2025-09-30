@@ -112,7 +112,7 @@ const About = () => {
 							<Link to="projects" smooth duration={500}>
 								View Projects
 							</Link>
-						</button> */}
+						</button> kkkk*/}
 					</div>
 				</div>
 
